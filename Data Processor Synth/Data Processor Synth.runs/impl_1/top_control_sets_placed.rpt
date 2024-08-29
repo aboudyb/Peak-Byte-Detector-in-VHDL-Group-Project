@@ -1,0 +1,98 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date         : Wed Apr 26 12:46:38 2023
+| Host         : DESKTOP-AD5K116 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    52 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    20 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     3 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     9 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              10 |            8 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              52 |           20 |
+| Yes          | No                    | No                     |              20 |            7 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             410 |          133 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+-----------------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+|      Clock Signal     |                 Enable Signal                 |                Set/Reset Signal               | Slice Load Count | Bel Load Count | Bels / Slice |
++-----------------------+-----------------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+|  clk_wiz/inst/clk_out | cmdProc1/ctrlByteCount                        | reset_IBUF                                    |                3 |              4 |         1.33 |
+|  clk_wiz/inst/clk_out | rx/rcvShiftReg                                | rx/bitCount[3]_i_1_n_0                        |                1 |              4 |         4.00 |
+|  clk_wiz/inst/clk_out | rx/baudClkX8Count[3]_i_1_n_0                  | rx/bitTmr[10]_i_1_n_0                         |                1 |              4 |         4.00 |
+|  clk_wiz/inst/clk_out | cmdProc1/txnow                                |                                               |                3 |              8 |         2.67 |
+|  clk_wiz/inst/clk_out | rx/rcvDataReg[7]_i_1_n_0                      | reset_IBUF                                    |                4 |              8 |         2.00 |
+|  clk_wiz/inst/clk_out | rx/rcvShiftReg                                | reset_IBUF                                    |                3 |              9 |         3.00 |
+|  clk_wiz/inst/clk_out |                                               |                                               |                8 |             10 |         1.25 |
+|  clk_wiz/inst/clk_out | rx/bitTmr[10]_i_2_n_0                         | rx/bitTmr[10]_i_1_n_0                         |                5 |             11 |         2.20 |
+|  clk_wiz/inst/clk_out | cmdProc1/reg_numWords_bcd[2][3]_i_1_n_0       | reset_IBUF                                    |                5 |             12 |         2.40 |
+|  clk_wiz/inst/clk_out | dataConsume1/maxIndex[2][3]_i_1_n_0           |                                               |                4 |             12 |         3.00 |
+|  clk_wiz/inst/clk_out |                                               | tx/bitTmr                                     |                4 |             14 |         3.50 |
+|  clk_wiz/inst/clk_out |                                               | dataConsume1/dataShift.dataTemp[6][7]_i_1_n_0 |                5 |             16 |         3.20 |
+|  clk_wiz/inst/clk_out | dataGen1/ctrlIn_detected                      | reset_IBUF                                    |                9 |             19 |         2.11 |
+|  clk_wiz/inst/clk_out |                                               | reset_IBUF                                    |               11 |             22 |         2.00 |
+|  clk_wiz/inst/clk_out | cmdProc1/rxdone                               | cmdProc1/byteNum_reg[0]0                      |               10 |             31 |         3.10 |
+|  clk_wiz/inst/clk_out | dataConsume1/count.count[0]_i_2_n_0           | dataConsume1/count.count[0]_i_1_n_0           |                8 |             32 |         4.00 |
+|  clk_wiz/inst/clk_out | tx/txBit_i_1_n_0                              | tx/txdone                                     |                9 |             32 |         3.56 |
+|  clk_wiz/inst/clk_out | dataConsume1/dataMax_reg[0]0_carry_n_0        | dataConsume1/dataShift.dataTemp[6][7]_i_1_n_0 |               13 |             56 |         4.31 |
+|  clk_wiz/inst/clk_out | dataConsume1/seqDone                          | reset_IBUF                                    |               18 |             68 |         3.78 |
+|  clk_wiz/inst/clk_out | dataConsume1/dataShift.dataTemp[6][7]_i_2_n_0 | dataConsume1/dataShift.dataTemp[6][7]_i_1_n_0 |               44 |            120 |         2.73 |
++-----------------------+-----------------------------------------------+-----------------------------------------------+------------------+----------------+--------------+
+
+

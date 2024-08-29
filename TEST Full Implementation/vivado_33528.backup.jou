@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sun Apr  2 15:46:37 2023
+# Process ID: 33528
+# Current directory: D:/Dangelo/OneDrive/Documents/University/EENG28010/EENG28010-Group-Project/TEST Full Implementation
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent40712 D:\Dangelo\OneDrive\Documents\University\EENG28010\EENG28010-Group-Project\TEST Full Implementation\TEST Full Implementation.xpr
+# Log file: D:/Dangelo/OneDrive/Documents/University/EENG28010/EENG28010-Group-Project/TEST Full Implementation/vivado.log
+# Journal file: D:/Dangelo/OneDrive/Documents/University/EENG28010/EENG28010-Group-Project/TEST Full Implementation\vivado.jou
+# Running On: AnonymousDesktop, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 16873 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Dangelo/OneDrive/Documents/University/EENG28010/EENG28010-Group-Project/TEST Full Implementation/TEST Full Implementation.xpr}
+update_compile_order -fileset sources_1

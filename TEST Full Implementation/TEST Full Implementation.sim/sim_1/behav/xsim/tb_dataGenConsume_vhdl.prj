@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../TEST Full Implementation.srcs/sources_1/imports/peak_detector/UART_RX_CTRL.vhd" \
+"../../../../TEST Full Implementation.srcs/sources_1/imports/peak_detector/UART_TX_CTRL.vhd" \
+"../../../../TEST Full Implementation.srcs/sources_1/imports/peak_detector/common_pack.vhd" \
+"../../../../TEST Full Implementation.srcs/sources_1/imports/peak_detector/cmdProcWrapper.vhd" \
+"../../../../TEST Full Implementation.srcs/sources_1/imports/peak_detector/cmdProc_synthesised.vhd" \
+"../../../../TEST Full Implementation.srcs/sources_1/imports/peak_detector/dataConsumeWrapper.vhd" \
+"../../../../TEST Full Implementation.srcs/sources_1/imports/peak_detector/unsigned/dataConsume_synthesised_unsigned.vhd" \
+"../../../../TEST Full Implementation.srcs/sources_1/imports/peak_detector/dataGen.vhd" \
+"../../../../TEST Full Implementation.srcs/sources_1/imports/peak_detector/unsigned/tb_dataGenConsume_unsigned.vhd" \
+
+# Do not sort compile order
+nosort

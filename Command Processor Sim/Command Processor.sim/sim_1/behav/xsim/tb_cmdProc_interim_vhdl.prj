@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Command Processor.srcs/sources_1/imports/Command Processor/UART_RX_CTRL.vhd" \
+"../../../../Command Processor.srcs/sources_1/imports/Command Processor/UART_TX_CTRL.vhd" \
+"../../../../Command Processor.srcs/sources_1/imports/Command Processor/common_pack.vhd" \
+"../../../../../Source Code/peak_detector/common_pack.vhd" \
+"../../../../Command Processor.srcs/sources_1/imports/Command Processor/cmdProc.vhd" \
+"../../../../Command Processor.srcs/sources_1/imports/Command Processor/dataConsumeWrapper.vhd" \
+"../../../../Command Processor.srcs/sources_1/imports/Command Processor/dataConsume_synthesised_unsigned.vhd" \
+"../../../../Command Processor.srcs/sources_1/imports/Command Processor/dataGen.vhd" \
+"../../../../Command Processor.srcs/sources_1/imports/Command Processor/tb_CmdProcessor_Interim.vhd" \
+
+# Do not sort compile order
+nosort

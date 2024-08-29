@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Wed Apr 26 11:50:08 2023
+# Process ID: 15816
+# Current directory: C:/Users/stevi/Documents/Uni/Year 2/Digital Design/EENG28010-Group-Project/Data Processor Synth
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent24084 C:\Users\stevi\Documents\Uni\Year 2\Digital Design\EENG28010-Group-Project\Data Processor Synth\Data Processor Synth.xpr
+# Log file: C:/Users/stevi/Documents/Uni/Year 2/Digital Design/EENG28010-Group-Project/Data Processor Synth/vivado.log
+# Journal file: C:/Users/stevi/Documents/Uni/Year 2/Digital Design/EENG28010-Group-Project/Data Processor Synth\vivado.jou
+# Running On: DESKTOP-AD5K116, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 6, Host memory: 17078 MB
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/stevi/Documents/Uni/Year 2/Digital Design/EENG28010-Group-Project/Data Processor Synth/Data Processor Synth.xpr}
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files {{C:/Users/stevi/Documents/Uni/Year 2/Digital Design/EENG28010-Group-Project/Source Code/peak_detector/cmdProc.edn}}] -no_script -reset -force -quiet
+remove_files  {{C:/Users/stevi/Documents/Uni/Year 2/Digital Design/EENG28010-Group-Project/Source Code/peak_detector/cmdProc.edn}}
+add_files -norecurse {{C:/Users/stevi/Documents/Uni/Year 2/Digital Design/EENG28010-Group-Project/Command Processor Sim/Command Processor.srcs/sources_1/imports/Command Processor/cmdProc.vhd}}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 6
+wait_on_run synth_1

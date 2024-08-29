@@ -1,0 +1,39 @@
+
+*** Running vivado
+    with args -log tb_cmdProc_interim.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source tb_cmdProc_interim.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source tb_cmdProc_interim.tcl -notrace
+Command: synth_design -top tb_cmdProc_interim -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17044
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 832.328 ; gain = 412.820
+---------------------------------------------------------------------------------
+ERROR: [Synth 8-5832] source file was generated for simulation and is not permitted as input to synthesis [D:/Dangelo/OneDrive/Documents/University/EENG28010/EENG28010-Group-Project/Command Processor/Command Processor.srcs/sources_1/imports/Command Processor/dataConsume_synthesised_unsigned.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'tb_cmdProc_interim' [D:/Dangelo/OneDrive/Documents/University/EENG28010/EENG28010-Group-Project/Command Processor/Command Processor.srcs/sources_1/imports/Command Processor/tb_CmdProcessor_Interim.vhd:51]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: non-synthesizable function call [D:/Dangelo/OneDrive/Documents/University/EENG28010/EENG28010-Group-Project/Command Processor/Command Processor.srcs/sources_1/imports/Command Processor/tb_CmdProcessor_Interim.vhd:179]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: extra waveform elements [D:/Dangelo/OneDrive/Documents/University/EENG28010/EENG28010-Group-Project/Command Processor/Command Processor.srcs/sources_1/imports/Command Processor/tb_CmdProcessor_Interim.vhd:180]
+WARNING: [Synth 8-312] ignoring unsynthesizable construct: wait statement with no conditon [D:/Dangelo/OneDrive/Documents/University/EENG28010/EENG28010-Group-Project/Command Processor/Command Processor.srcs/sources_1/imports/Command Processor/tb_CmdProcessor_Interim.vhd:210]
+ERROR: [Synth 8-27] nested clocked statements not supported [D:/Dangelo/OneDrive/Documents/University/EENG28010/EENG28010-Group-Project/Command Processor/Command Processor.srcs/sources_1/imports/Command Processor/tb_CmdProcessor_Interim.vhd:215]
+ERROR: [Synth 8-285] failed synthesizing module 'tb_cmdProc_interim' [D:/Dangelo/OneDrive/Documents/University/EENG28010/EENG28010-Group-Project/Command Processor/Command Processor.srcs/sources_1/imports/Command Processor/tb_CmdProcessor_Interim.vhd:51]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 923.188 ; gain = 503.680
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+7 Infos, 3 Warnings, 0 Critical Warnings and 4 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  5 18:30:40 2023...
